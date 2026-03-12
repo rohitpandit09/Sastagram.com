@@ -19,11 +19,11 @@ const ViewPost = () => {
     return (
         <div className='flex flex-col gap-10'>
         <Navbar/>
-        <div className='flex flex-wrap gap-3 px-10'>
+        <div className='flex flex-wrap justify-center px-10 h-fit w-screen overflow-x-none gap-10 '>
             {posts.map((post)=>{{
                 return (
-                    <div key={post._id} className='h-fit w-100 bg-white rounded-lg flex flex-col p-3 gap-2'>
-                        <img src={post.image} alt={post.caption} className='object-cover h-120 w-100 border-gray-300 rounded-lg'/>
+                    <div key={post._id} className='h-100 w-1/2 bg-white rounded-lg flex flex-col p-3 gap-2 justify-center '>
+                        <img src={post.image} alt={post.caption} className='object-cover h-80 w-screen border-gray-300 rounded-lg'/>
                         <p className='text-[20px] text-black'>
                             {post.caption}
 
